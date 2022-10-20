@@ -7,12 +7,25 @@
     */
 
     //ENTRADA
+    const quantidadeDeAlunos = parseInt(prompt("Informe a quantidade de alunos na sua sala"));
+    let menina = [];
+    let menino = [];
 
 
     //PROCESSAMENTO
+    for (let alunos = 1; alunos <= quantidadeDeAlunos; alunos++) {
+        const nome = prompt("Informe o nome do seu Aluno " + alunos)
+        const pergunta = prompt("Informe se Este aluno " + nome + " É menino-O ou menina-A").toLowerCase();
 
+        if (pergunta === "o") {
+            menino.push(nome)
+        }
+        else{
+            menina.push(nome)
+        }
+    }
 
     //SAÍDA
-
+    document.write(`Lista Masculina: ${menino.sort()} <br> Lista Feminina: ${menina.sort()}`)
     
 </script>

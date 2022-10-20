@@ -8,12 +8,21 @@
     */
 
     //ENTRADA
-
-
+    let listaLivros = ["A Arte da Guerra", "Sistemas Inteligentes", "Introdução a Programação com JS", "1984", "Use a cabeça: JS"];
+    let ficcaoLivro = [];
+    let tecnicoLivro = [];
     //PROCESSAMENTO
-
+    for (const tema of listaLivros) {
+        const pergunta = prompt("Informe se esse livro e de Tecnico-T Ou Ficção-F " + tema).toLowerCase();
+        if (pergunta === "t") {
+            tecnicoLivro.push(tema);
+        }
+        else{
+            ficcaoLivro.push(tema);
+        }
+    }
 
     //SAÍDA
-
+    document.write(`Lista de Técnico ${tecnicoLivro.join(" - ")} </br> Lista de Ficção ${ficcaoLivro.join(" - ")} </br> Quantidade Do Técnico: ${tecnicoLivro.length} </br> Quantidade De Ficção ${ficcaoLivro.length}`)
 
 </script>

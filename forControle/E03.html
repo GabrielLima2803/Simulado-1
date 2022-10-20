@@ -11,12 +11,17 @@
     */
 
     //ENTRADA
+    let valorInicial = Number(prompt("Informe o valor inical investido"));
+    const valorFinal = valorInicial * 2
 
-
+    let meses = 0
     //PROCESSAMENTO
-
+    for (meses = 1; valorInicial <= valorFinal; meses++) {
+     valorInicial = valorInicial + (valorInicial * 0.005);
+        
+    }
 
     //SAÍDA
-
+    document.write(`Valor Inicial ${valorInicial.toFixed(2)} <br> Quantidade de meses ${meses}`)
 
 </script>

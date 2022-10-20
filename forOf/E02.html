@@ -8,11 +8,19 @@
     */
 
     //ENTRADA
-
-
+    let nomePessoas = ["Eduardo da Silva", "Eduardo Montandon", "Lucas Eduardo", "José da Silva", "Rafael Gonçalves"];
+    let familiaSilva = [];
+    let resto = [];
     //PROCESSAMENTO
-
-
+    for (const silva of nomePessoas) {
+        if (silva.search("Silva") >= 0 ) {
+            familiaSilva.push(silva)
+        }
+        else(
+        resto.push(silva)
+        )
+    }
+    document.write(`Família Silva: ${familiaSilva}, quantidades de descendetes: ${familiaSilva.length} `)
     //SAÍDA
 
 
