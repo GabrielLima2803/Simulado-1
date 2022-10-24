@@ -12,7 +12,7 @@
     let precoKgArroz = [3.90, 4.80, 5.75, 6.99, 7.00, 4.99, 5.19];
     let soma = 0;
     //PROCESSAMENTO
-    for (const preco of precoKgArroz) {
+    for (let preco of precoKgArroz) {
         soma = soma + preco
         
     }
@@ -22,5 +22,5 @@
     let menor = precoKgArroz.sort((a,b) => a - b)[0]
     //SAÍDA
 
-    document.write(`Está Será a media ${media.toFixed(2)} </br> Maior preço: ${maior} </br> Este e menor preço ${menor} `)
+    document.write(`Está Será a media ${media.toFixed(2)} </br> Maior preço: ${maior} </br> Este e menor preço ${menor} <br> Lista dos preços do arroz: ${precoKgArroz.join(" - ")} `)
 </script>

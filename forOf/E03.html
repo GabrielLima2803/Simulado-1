@@ -12,7 +12,7 @@
     let ficcaoLivro = [];
     let tecnicoLivro = [];
     //PROCESSAMENTO
-    for (const tema of listaLivros) {
+    for (let tema of listaLivros) {
         const pergunta = prompt("Informe se esse livro e de Tecnico-T Ou Ficção-F " + tema).toLowerCase();
         if (pergunta === "t") {
             tecnicoLivro.push(tema);

@@ -12,7 +12,7 @@
     let familiaSilva = [];
     let resto = [];
     //PROCESSAMENTO
-    for (const silva of nomePessoas) {
+    for (let silva of nomePessoas) {
         if (silva.search("Silva") >= 0 ) {
             familiaSilva.push(silva)
         }
@@ -20,7 +20,7 @@
         resto.push(silva)
         )
     }
-    document.write(`Família Silva: ${familiaSilva}, quantidades de descendetes: ${familiaSilva.length} `)
+    document.write(`Família Silva: ${familiaSilva} <br> Quantidades de descendetes: ${familiaSilva.length} <br> Lista Completa: ${nomePessoas.join(" - ")} `)
     //SAÍDA
 
 
